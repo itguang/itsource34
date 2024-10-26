@@ -164,7 +164,7 @@ export default {
     if (this.picUrl === "" || this.picUrl === null) {
       this.$store.commit(
         "setPicUrl",
-        "https://www.freemusic.ltd/avatar/1.jpeg"
+        "http://localhost:8889/avatar/admin.jpg"
       );
     }
     this.progressLength = this.$refs.progress.getBoundingClientRect().width;

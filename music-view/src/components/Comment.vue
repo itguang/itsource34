@@ -71,7 +71,7 @@ export default {
     if (!localStorage.getItem("consumerName")) {
       this.$store.commit(
         "setAvatar",
-        "https://www.freemusic.ltd/avatar/1.jpeg"
+        "http://localhost:8889/avatar/admin.jpg"
       );
     }
   },

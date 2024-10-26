@@ -18,7 +18,7 @@
         </el-tooltip>
       </div>
       <div class="user-avator">
-        <img src="https://www.freemusic.ltd/avatar/1.jpeg" alt="头像" />
+        <img src="http://localhost:8889/avatar/admin.jpg" alt="头像" />
       </div>
       <el-dropdown class="user-name" trigger="click" @command="handleCommand">
         <span class="el-dropdown-link">
