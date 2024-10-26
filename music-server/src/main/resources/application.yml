@@ -1,0 +1,49 @@
+server:
+  port: 8889
+
+spring:
+
+  main:
+    allow-circular-references: true
+
+  jackson:
+    time-zone: GMT+8
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+  #在windows本地部署不用配置,可以删掉这段配置
+  redis:
+    host: 127.0.0.1 #在服务器上则写上服务器的ip地址
+    port: 6379
+    #password: #密码(默认没有密码)
+
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:13306/itsource34?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+      username: root
+      password: root
+
+token:
+  expireTime: 259200000
+  secretKey: abcdefghijklmnopqrstuvwxyz
+
+upload:
+  mode: local
+  local:
+    # nginx映射本地文件路径
+    url: http://localhost:8889/
+    #windows本地：http://localhost/
+    #服务器：http://ip地址/ 或 https://域名/
+    # 本地文件存储路径
+    path: /upload/
+    #windows本地：nginx默认挂载在C盘 若nginx挂载点在C:/upload路径 则配置为：/upload/
+    #服务器：若nginx挂载点在/usr/local/upload路径 则配置为：/usr/local/upload/
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: assign_id

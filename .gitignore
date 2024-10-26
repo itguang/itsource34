@@ -1,0 +1,44 @@
+/music-server/src/main/resources/db/migration/
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+/src/main/resources/db/migration/
+/前端代码/novel_vue_client-master/node_modules/
+/前端代码/novel_vue_server-master/node_modules/
+/服务端代码/java_spring_novel-master/target/
+/music-admin/node_modules/
+/music-view/dist/
+/music-view/node_modules/
+/music-server/.mvn/
+/music-admin/dist/
+/music-admin/package-lock.json
+/music-view/package-lock.json
+/music-server/src/main/resources/db/migration/
